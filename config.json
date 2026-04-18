@@ -1,0 +1,48 @@
+{
+  "inbounds": [
+    {
+      "port": 8080,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "C4lVln7e-1f3a-4d6e-8a9b-1c2d3e4f5a6b",
+            "level": 0
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/CxlVlns"
+        }
+      }
+    },
+    {
+      "port": 8080,
+      "protocol": "vless-httpu",
+      "settings": {
+        "clients": [
+          {
+            "id": "C4lVln7e-1f3a-4d6e-8a9b-1c2d3e4f5a6b",
+            "level": 0
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "httpupgrade",
+        "httpSettings": {
+          "path": "/kalVlns"
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
+}
