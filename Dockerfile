@@ -1,7 +1,7 @@
 FROM gojolvl99/gojo-8n1:latest
 
 LABEL maintainer="Cxlvins"
-LABEL description="Cloud Run Xray HTTP Upgrade (VLESS WS+HU)"
+LABEL description="Cloud Run Xray HTTP Upgrade (VLESS WS+HU 8-in-1)"
 LABEL version="3.3"
 
 WORKDIR /etc/xray
