@@ -1,4 +1,4 @@
-FROM gojolvl99/gojo-vless-core_v3:latest
+FROM gojolvl99/gojo-8n1:latest
 
 LABEL maintainer="Cxlvins"
 LABEL description="Cloud Run Xray HTTP Upgrade (VLESS WS+HU)"
