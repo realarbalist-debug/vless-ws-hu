@@ -1,19 +1,13 @@
-FROM gojolvl99/gojo-8n1:latest
+FROM teddysun/v2ray:latest
 
-LABEL maintainer="Cxlvins"
-LABEL description="Cloud Run Xray HTTP Upgrade (VLESS WS+HU 8-in-1)"
-LABEL version="3.3"
+LABEL maintainer="CxlVlns"
+LABEL description="V2Ray container with custom config"
+LABEL version="1.0"
 
-WORKDIR /etc/xray
+WORKDIR /etc/v2ray
 
-COPY config.json /etc/xray/config.json
-
-# Cloud Run uses ONLY one port
 EXPOSE 8080
 
-# reduce overhead
-ENV XRAY_LOGLEVEL=warning
+COPY config.json /etc/v2ray/config.json
 
-# run xray
-ENTRYPOINT ["xray"]
-CMD ["-config", "/etc/xray/config.json"]
+CMD ["v2ray", "-config", "/etc/v2ray/config.json"]
