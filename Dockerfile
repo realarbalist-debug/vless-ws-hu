@@ -1,10 +1,9 @@
-FROM gojolvl99/singbox-5s
+FROM gojolvl99/gojo-8n1
 
 LABEL maintainer="MrValdez"
 LABEL description="V2Ray container with custom config"
 LABEL version="1.0"
 
-EXPOSE 8080
 
 COPY config.json /etc/v2ray/config.json
 
