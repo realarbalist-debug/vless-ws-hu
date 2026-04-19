@@ -1,7 +1,7 @@
 {
   "inbounds": [
     {
-      "port": 8080,
+      "port": 9000,
       "protocol": "vless",
       "settings": {
         "clients": [
@@ -20,7 +20,7 @@
       }
     },
     {
-      "port": 8080,
+      "port": 9000,
       "protocol": "vless-httpu",
       "settings": {
         "clients": [
