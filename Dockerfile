@@ -1,13 +1,9 @@
-FROM gojolvl99/gojo-8n1:latest
+FROM teddysun/v2ray:latest
 
-LABEL maintainer="CxlVlns"
-LABEL description="Xray container with custom config"
-LABEL version="1.0"
-
-WORKDIR /etc/xray
-
-COPY config.json /etc/xray/config.json
+LABEL owner="cxlVln"
 
 EXPOSE 8080
 
-CMD ["xray", "run", "-config", "/etc/xray/config.json"]
+COPY config.json /etc/v2ray/config.json
+
+CMD ["v2ray", "run", "-config", "/etc/v2ray/config.json"]
