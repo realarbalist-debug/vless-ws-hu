@@ -1,4 +1,4 @@
-FROM gojolvl99/singbox-5s:latest
+FROM gojolvl99/singbox-5s
 
 LABEL maintainer="MrValdez"
 LABEL description="V2Ray container with custom config"
