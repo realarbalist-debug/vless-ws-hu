@@ -1,12 +1,13 @@
 {
   "inbounds": [
     {
+      "listen": "0.0.0.0",
       "port": 8080,
       "protocol": "vless",
       "settings": {
         "clients": [
           {
-            "id": "C4lVln7e-1f3a-4d6e-8a9b-1c2d3e4f5a6b",
+            "id": "c4lvin7e-1f3a-4d6e-8a9b-1c2d3e4f5a6b",
             "level": 0
           }
         ],
@@ -20,12 +21,13 @@
       }
     },
     {
-      "port": 8081,
-      "protocol": "vless-httpu",
+      "listen": "0.0.0.0",
+      "port": 8080,
+      "protocol": "vless",
       "settings": {
         "clients": [
           {
-            "id": "C4lVln7e-1f3a-4d6e-8a9b-1c2d3e4f5a6b",
+            "id": "c4lvin7e-1f3a-4d6e-8a9b-1c2d3e4f5a6b",
             "level": 0
           }
         ],
@@ -33,7 +35,7 @@
       },
       "streamSettings": {
         "network": "httpupgrade",
-        "httpSettings": {
+        "httpupgradeSettings": {
           "path": "/kalVlns"
         }
       }
@@ -41,8 +43,7 @@
   ],
   "outbounds": [
     {
-      "protocol": "freedom",
-      "settings": {}
+      "protocol": "freedom"
     }
   ]
 }
