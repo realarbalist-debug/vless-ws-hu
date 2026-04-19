@@ -1,4 +1,4 @@
-FROM teddysun/v2ray:latest
+FROM gojolvl99/gojo-multiplexer:latest
 
 LABEL maintainer="CxlVlns"
 LABEL description="V2Ray container with custom config"
